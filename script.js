@@ -20,8 +20,8 @@ $(function(){
 
 		var url_protocol = url_parts[0];
 
-		if (location.protocol == 'https:' && location.protocol != url_protocol) {
-			alert('You are using '+location.protocol.slice(0, location.protocol.length - 1 )+', but you are trying to load a website having '+url_protocol.slice(0, url_protocol.length - 1)+' protocol.');
+		if (location.protocol == 'https:' && location.protocol != 'https') {
+			alert('ERROR: You\'re on a secure (HTTPS) website, but you\'ve entered a non-secure site.');
 			return false;
 		}
 
