@@ -20,7 +20,7 @@ $(function(){
 
 		var url_protocol = url_parts[0];
 
-		if (location.protocol == 'https:' && location.protocol != 'https') {
+		if (location.protocol == 'https:' && url_protocol != 'https:') {
 			alert('ERROR: You\'re on a secure (HTTPS) website, but you\'ve entered a non-secure site.');
 			return false;
 		}
