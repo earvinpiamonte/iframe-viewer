@@ -16,6 +16,15 @@ $(function(){
 			return false;
 		}
 
+		var url_parts = $website_url.val().split('/');
+
+		var url_protocol = url_parts[0];
+
+		if (location.protocol == 'https:' && location.protocol != url_protocol) {
+			alert('You are using '+location.protocol.slice(0, location.protocol.length - 1 )+', but you are trying to load a website having '+url_protocol.slice(0, url_protocol.length - 1)+' protocol.');
+			return false;
+		}
+
 		// log location
 		console.log({ location: $location.val() });
 
