@@ -2,8 +2,6 @@ $(function(){
 
 	// on click on submit
 	$('#submit').on('click', function(){
-		// set body
-		var $body = $('body');
 
 		// set website url
 		var $website_url = $('[name="website_url"]');
@@ -28,8 +26,12 @@ $(function(){
 		// log location
 		console.log({ location: $location.val() });
 
-		// replace body content with contents from entered website URL
-		$body.html('<iframe class="iframe" src="'+$website_url.val()+'"></iframe>');
+		// hide form and parent
+		$('#root').hide();
+
+		// set src and show
+		$('#iframe').attr('src', $website_url.val()).show();
 
 	});
+
 });
