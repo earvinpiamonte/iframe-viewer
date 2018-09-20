@@ -29,7 +29,7 @@ $(function(){
 		console.log({ location: $location.val() });
 
 		// replace body content with contents from entered website URL
-		$body.html('<iframe class="iframe" src="'+$website_url.val()+'"></iframe>');
+		$body.html('<iframe class="iframe" scrolling="no" src="'+$website_url.val()+'"></iframe>');
 
 	});
 });

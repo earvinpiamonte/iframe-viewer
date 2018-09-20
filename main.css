@@ -21,10 +21,10 @@ body {
 }
 
 html, body, #root {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: #f7f8f7;
     position: relative;
-    z-index: 0;
+    /*z-index: 0;*/
 }
 
 div {
@@ -179,7 +179,10 @@ label
     left: 0;
     right: 0;
     z-index: 1;
-    width: 100%;
+    /*width: 100%;*/
+    width: 1px;
+    min-width: 100%;
+    *width: 100%;
     min-height: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
