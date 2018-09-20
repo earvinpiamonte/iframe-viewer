@@ -11,9 +11,8 @@ $(function(){
 		// set location
 		var $location = $('[name="location"]:checked');
 
-		// if website url is not set then do nothing
-		if ($website_url.val().trim() == '') {
-			$website_url.focus();
+		// if website url or location is not set then do nothing
+		if ($website_url.val().trim() == '' || $location.val() == undefined) {
 			return false;
 		}
 
