@@ -180,7 +180,7 @@ label
     right: 0;
     z-index: 1;
     /*width: 100%;*/
-    width: 1px;
+    width: 1px !important;
     min-width: 100%;
     *width: 100%;
     min-height: 100%;
